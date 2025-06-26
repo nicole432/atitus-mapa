@@ -2,7 +2,7 @@ import './input.css';
 
 export const Input = ({ label, value, onChange, type = "text", placeholder = "", ...props }) => (
   <div>
-    {label && <label>{label}</label>}
+    {label && <label className="label">{label}</label>}
     <input
       className="input"
       type={type}

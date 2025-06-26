@@ -1,4 +1,16 @@
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #D1A257;
+}
+
+.welcome {
+    font-family: "Sorts Mill Goudy";
+    font-size: 14px;
+}
+
 .title {
-    font-size: 24px;
-    font-weight: bold;
+    font-family: "Sorts Mill Goudy";
+    font-size: 30px;
 }

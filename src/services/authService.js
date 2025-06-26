@@ -1,6 +1,9 @@
 import axios from 'axios';
 
-const API_URL = 'https://passing-agatha-atitus-0ca94c8f.koyeb.app/auth';
+//Endereço da API: https://passing-agatha-atitus-0ca94c8f.koyeb.app/auth
+//Path: /auth/signin, /auth/signup
+
+const API_URL = 'https://running-reggi-marcelassunca-cb254d7c.koyeb.app/auth';
 
 export async function signIn(email, password) {
   try {

@@ -1,0 +1,10 @@
+.linePosition{
+display: flex;
+flex-direction: row;
+gap: 20px;
+}
+.line{
+width: 200px;
+height: 1px;
+background-color: #B0A8A8;
+}

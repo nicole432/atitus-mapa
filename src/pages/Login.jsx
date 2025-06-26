@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Navbar, Logo, Title, Input, Button } from "../components";
+import { Navbar, Logo, Title, Input, Button, Lines } from "../components";
 import { signIn } from "../services/authService";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../contexts/AuthContext";
@@ -25,19 +25,23 @@ export function Login() {
 
   return (
     <>
-      <div className="max-w-md mx-auto p-4">
-        <div className="text-center">
+      <div className="max-w-lg mx-auto p-10">
+        <div>
           <Logo />
         </div>
 
-        <div className="pt-6 pb-4">
-          <Title title="Faça seu cadastro" />
+        <div className="pt-6 pb-4 text-white">
+          <Title welcome="Seja bem vindo ao" title="SABORIZE" />
+        </div>
+
+        <div className="pb-15">
+          <Lines />
         </div>
 
         <form onSubmit={handleSubmit}>
-          <div className="pb-4">
+          <div className="pb-7 text-white font-light text-xs ">
             <Input
-              label="Email"
+              label="E-mail ou nome do usuário"
               placeholder="Digite seu email..."
               type="email"
               required
@@ -45,7 +49,7 @@ export function Login() {
               onChange={(e) => setEmail(e.target.value)}
             />
           </div>
-          <div className="pb-4">
+          <div className="pb-4 text-white font-light text-xs">
             <Input
               label="Senha"
               placeholder="Digite sua senha..."
@@ -56,18 +60,18 @@ export function Login() {
             />
           </div>
           {erro && <p style={{ color: "red" }}>{erro}</p>}
-
-          <div className="text-center pt-4">
-            <Button type="submit">Acessar</Button>
+          <div className="text-center pt-10 ">
+            <Button type="submit">Entrar</Button>
           </div>
         </form>
 
         <div className="text-center pt-8">
           <Link
             to="/register"
-            className="text-blue-600 hover:underline"
+            className="text-white hover:underline text-sm"
           >
-            Faça seu cadastro
+
+            Cadastre-se
           </Link>
         </div>
       </div>
