@@ -34,7 +34,7 @@ export function Login() {
           <Title welcome="Seja bem vindo ao" title="SABORIZE" />
         </div>
 
-        <div className="pb-15">
+        <div className="pb-10">
           <Lines />
         </div>
 
@@ -65,7 +65,7 @@ export function Login() {
           </div>
         </form>
 
-        <div className="text-center pt-8">
+        <div className="text-center pt-5">
           <Link
             to="/register"
             className="text-white hover:underline text-sm"
